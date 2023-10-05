@@ -1,0 +1,534 @@
+/* Importación de fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+/* font-family: 'Cinzel Decorative', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Poppins:wght@400;500&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+/* Reset de márgenes para todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Estilos para el encabezado (header) */
+header {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+}
+
+/* Estilos para el título del encabezado */
+h1 {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 42px;
+    color: #bfaf92;
+    position: relative;
+    top: 0;
+    background-color: #fff;
+    padding-top: 25px;
+    height: 90px;
+    width: 100vw;
+}
+
+/* Estilos para el h1 en dispositivos móviles */
+@media (max-width: 767px) {
+    h1 {
+        font-size: 30px;
+    }
+}
+
+/* Estilos para la navegación */
+nav {
+    width: 100vw;
+    height: 20%;
+    background-color: #bfaf92;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Estilos para la lista de navegación */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Estilos para los elementos de la lista de navegación */
+nav li {
+    display: inline;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+nav ul li a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilos para la lista de navegación en dispositivos móviles */
+@media (max-width: 767px) {
+    nav ul {
+        margin-top: 0px;
+    }
+    nav li {
+        margin: 0px;
+    }
+    nav ul li a {
+        font-weight: lighter;
+    }
+}
+    
+/* Estilos para la imagen de fondo del encabezado */
+.imageninicio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 60px;
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Estilos para la galería de imágenes */
+#galeria {
+    width: 100vw;
+    height: 100%;
+    background-color: #eedec2;
+    text-align: center;
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    overflow: hidden;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #92805e;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/* Estilos para los contenedores de imágenes */
+.containerimg {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    padding: 10px 0;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 10px; 
+}
+
+.contenedor-imagen {
+    width: 28%;
+    height: 75vh;
+    background-color: #eedec2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.imagen-vertical {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.imagen-vertical img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+}
+
+.contenedor-imagenes {
+    width: 65%;
+    height: 75vh;
+    background-color: #eedec2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px; 
+}
+
+.imagen-cuadrada {
+    width: 48%;
+    height: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-cuadrada img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 97%;
+    height: 95%;
+}
+
+/* Estilos para las imágenes en dispositivos móviles */
+@media (max-width: 767px) {
+    .containerimg {
+        padding: 0;
+    }
+    .contenedor-imagen {
+        width: 28%;
+        height: 90%;
+    }
+    .contenedor-imagenes {
+        width: 70%;
+        height: 90%;
+        gap: 10px; 
+    } 
+}
+
+/* Estilos para el botón "Ver más" */
+#ver-mas {
+    background-color: #92805e;
+    color: #fff;
+    border: 10px #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+#ver-mas:hover {
+    background-color: #b8ae9f;
+}
+
+@media (max-width: 767px) {
+    #ver-mas {
+        background-color:#bfaf92; 
+        color: #000;
+    }
+}
+
+/* Estilos para la sección de promociones */
+.promociones {
+    width: 100vw;
+    height: 100vh;
+    background-color: #bfaf92;
+    padding: 30px 30px;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    overflow: hidden;
+}
+
+
+/* Cambiar el color de fondo del botón "Ver más" en pantallas pequeñas */
+@media (max-width: 767px) {
+    .promociones {
+        background-color:#8c7b5e;
+    }
+}
+
+.listado-promociones {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    gap: 20px;
+}
+
+/* Estilos para las promociones individuales */
+.promocion {
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.promocion img {
+    width: 68%;
+    height: 56%;
+    margin: 20px 0px;
+    object-fit: cover;
+}
+
+
+@media (max-width: 767px) {
+    .listado-promociones {
+        flex-direction: row; /* Cambia la dirección de la lista a columna */
+        align-items:flex-start;
+    }
+    .promocion {
+        margin-bottom: 0;
+    }
+    .promocion img {
+        margin: 0;
+    }
+}
+
+
+.promociones h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.promociones p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+@media (max-width: 767px) {
+    .promociones h2 {
+        font-size: 24px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .promociones p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+}
+
+/* Estilos para el botón "Ver detalles" */
+.promocion a {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    font-size: 14px;
+    color: #92805e;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-weight: 400;
+    display: inline-block;
+    border: 5px #92805e;
+    border-radius: 5px;
+    margin-top: 5px;
+    transition: background-color 0.3s;
+}
+
+.promocion a:hover {
+    background-color: #8c7b5e;
+    color: #fff;
+}
+
+@media (max-width: 767px){
+    .promocion a{
+    font-size: 10px;
+    }
+    .promocion h3 {
+        font-size: 10px;
+    }
+}
+
+/* Estilos para la sección Nosotros */
+#nosotros {
+    width: 100vw;
+    height: 100vh;
+    background-color: #eedec2;
+    padding: 30px 30px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+    overflow: hidden;
+}
+
+.titulo-nosotros {
+    width: 37%;
+    padding: 0 20px;
+}
+
+@media (max-width: 767px) {
+    .titulo-nosotros {
+        width: 100%;
+    }
+}
+
+.nosotros h2 {
+    font-size: 28px;
+    color: #92805e;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+#nosotros p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #000;
+    line-height: 1.5;
+    text-align: justify;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+@media (max-width: 767px) {
+    #nosotros p {
+        font-size: 14px;
+    }
+}
+
+.imagen-nosotros {
+    width: 60%;
+    text-align: right;
+}
+
+.imagen-nosotros img {
+    max-width: 100%;
+    height: 85%;
+    margin-top: 46px;
+}
+
+@media (max-width: 767px) {
+    .imagen-nosotros img {
+        display: none;
+    }
+}
+
+/* Estilos para la sección del producto más vendido */
+.mas-vendido {
+    width: 100vw;
+    height: 100vh;
+    padding: 30px 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #fcf8f1;
+    align-items: center;
+    overflow: hidden;
+}
+
+.video-container {
+    width: 65%;
+    height: 73%;
+    margin-top: 10px;
+    background-color: #eedec2;
+}
+
+.video-container iframe {
+    width: 90%;
+    height: 90%;
+    margin-top: 20px;
+}
+
+.mas-vendido h2 {
+    color: #92805e;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.mas-vendido p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #000;
+    line-height: 1.5;
+    margin: 0 50px 10px 50px;
+    text-align: justify;
+}
+
+/* Estilos para la sección de Contacto */
+#contacto {
+    background-color: #f0f0f0;
+    padding: 30px 30px;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    overflow: hidden;
+}
+
+#contacto h2 {
+    font-size: 28px;
+    color: #92805e;
+    margin-bottom: 10px;
+}
+
+#contacto p {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #8c7b5e;
+    line-height: 1.5;
+}
+
+#contacto li {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    list-style: none;
+}
+
+.map-container {
+    margin-top: 20px;
+}
+
+/* Estilos para el pie de página (footer) */
+footer {
+    background-color: #bfaf92;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    overflow: hidden;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer li {
+    display: inline;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+/* Estilos para los íconos de redes sociales en el pie de página */
+footer a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: font-size 0.2s ease-in-out;
+}
+
+footer a:hover {
+    transform: scale(1.2);
+}
+
+footer h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 10px;
+}
